@@ -55,8 +55,10 @@ body {
     margin-bottom: 0;
 }
 
-.li, .ul {
+ul.links {
   list-style-type: none;
+  margin:0;
+  padding: 0;
 }
 
 .cards {
