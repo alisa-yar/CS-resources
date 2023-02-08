@@ -33,6 +33,7 @@ body {
     width: 100%;
     display: block;
     position: center;
+    box-sizing: border-box;
 }
 
 .header {
@@ -63,9 +64,10 @@ body {
     margin-bottom: 0;
 }
 
-.topic {
-   text-align: center;
-   box-sizing: border-box;
+li ,ul {
+  list-style-type: none;
+  margin:0;
+  padding: 0;
 }
 
 .links {
@@ -75,23 +77,21 @@ body {
     margin: 27px auto;
     font-weight: 400;
     list-style-type: none;
-    text-align:center;
+    box-sizing: border-box;
 }
 
-ul {
-  /*list-style-type: none;*/
-  line-height: 1.5;
-  display: inline-block;
-  text-align: left;
-  position: relative;
-  background-color: transparent;
-  color: var(--blueText);
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  padding: 10px;
-  text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
+.link {
+    position: relative;
+    background-color: transparent;
+    color: var(--blueText);
+    text-align: center;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .footer {
