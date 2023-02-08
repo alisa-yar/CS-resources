@@ -92,12 +92,12 @@ a {
     -webkit-tap-highlight-color: transparent;
 }
 
-footer {
+.footer {
     font-weight: 400;
     font-size: 15px;
     text-align: center;
     line-height: 1.5;
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
