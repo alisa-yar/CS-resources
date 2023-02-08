@@ -78,7 +78,7 @@ li ,ul {
     list-style-type: none;
 }
 
-a {
+.link {
     position: relative;
     background-color: transparent;
     color: var(--blueText);
@@ -103,7 +103,7 @@ a {
     display: inline-block;
 }
 
-a.alisa {
+.alisa {
     color: var(--blueText);
     background: none;
     text-decoration: none;
