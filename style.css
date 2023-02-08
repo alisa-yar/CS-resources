@@ -3,7 +3,7 @@
 :root {
     --font: 'Inter', sans-serif;
     
-    --textColor: #FFFFFF; /*white*/
+    --headerColor: #FFFFFF; /*white*/
     --greyText: #9B9B9B;
     --blueText: #0073E5; 
     
@@ -20,7 +20,7 @@ html {
     flex-direction: column;
 
     font-family: var(--font);
-    color: var(--textColor);
+    color: var(--greyText);
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
@@ -36,6 +36,7 @@ body {
 }
 
 .header {
+    color: var(--headerColor);
     font-weight: 600;
     font-size: 36px;
     text-align: center;
@@ -45,7 +46,6 @@ body {
 .description {
     font-weight: 500;
     font-size: 20px;
-    color: var(--greyText);
     text-align: center;
     line-height: 1.5;
     margin-top: 10px;
@@ -66,7 +66,6 @@ li ,ul {
     margin: 10px auto;
     padding: 10px;
     background-color: transparent;
-    color: var(--textColor);
     box-sizing: border-box;
 }
 
@@ -96,7 +95,6 @@ a {
 footer {
     font-weight: 400;
     font-size: 15px;
-    color: var(--greyText);
     text-align: center;
     line-height: 1.5;
     position: relative;
@@ -113,7 +111,7 @@ footer {
 
 @media (hover: hover) {
     .alisa:hover {
-    color: var(--purple);
+    color: var(--blueText);
     }
 }
 
