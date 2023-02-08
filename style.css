@@ -78,13 +78,14 @@ li ,ul {
     font-weight: 400;
     list-style-type: none;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .link {
     position: relative;
     background-color: transparent;
     color: var(--blueText);
-    text-align: center;
+    text-align: left;
     display: block;
     margin-left: 10px;
     margin-right: 10px;
