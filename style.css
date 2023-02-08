@@ -79,7 +79,7 @@ li ,ul {
     list-style-type: none;
 }
 
-.link {
+a {
     position: relative;
     background-color: transparent;
     color: var(--blueText);
