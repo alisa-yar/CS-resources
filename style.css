@@ -33,7 +33,6 @@ body {
     width: 100%;
     display: block;
     position: center;
-    box-sizing: border-box;
 }
 
 .header {
@@ -66,6 +65,7 @@ body {
 
 .topic {
    text-align: center;
+   box-sizing: border-box;
 }
 
 .links {
@@ -75,7 +75,6 @@ body {
     margin: 27px auto;
     font-weight: 400;
     list-style-type: none;
-    box-sizing: border-box;
     text-align:center;
 }
 
