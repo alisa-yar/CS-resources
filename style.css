@@ -53,12 +53,13 @@ body {
     padding: 10px;
     background-color: transparent;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .description {
     font-weight: 500;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
     line-height: 1.5;
     margin-top: 10px;
     margin-bottom: 0;
