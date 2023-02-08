@@ -83,10 +83,6 @@ body {
     position: relative;
     background-color: transparent;
     color: var(--blueText);
-    border-style: solid; 
-    border-color: var(--textColor);
-    border-width: 2px;
-    border-radius: 10px;
     text-align: center;
     display: block;
     margin-left: 10px;
