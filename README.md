@@ -1,2 +1,2 @@
-# Math
-Resources 
+# Math Resources :sparkles:
+https://math.alisa.social
