@@ -2,9 +2,9 @@
 
 :root {
     --textColor: #FFFFFF;
-    --purple: #9D44F0;
     --greyText: #9B9B9B;
-    
+    --blueText: #0073E5;
+
     --font: 'Karla', sans-serif;
     --headerFont: 'Poppins', sans-serif, 'arial';
     --describeFont: 'Roboto', sans-serif, 'arial';
@@ -78,7 +78,7 @@ body {
 .link {
     position: relative;
     background-color: transparent;
-    color: var(--textColor);
+    color: var(--blueText);
     border-style: solid; 
     border-color: var(--textColor);
     border-width: 2px;
@@ -106,7 +106,7 @@ footer {
 }
 
 .alisa {
-    color: var(--purple);
+    color: var(--blueText);
     background: none;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
