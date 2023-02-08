@@ -103,7 +103,7 @@ a {
     display: inline-block;
 }
 
-.alisa {
+a.alisa {
     color: var(--blueText);
     background: none;
     text-decoration: none;
