@@ -3,7 +3,7 @@
 :root {
     --font: 'Inter', sans-serif;
     
-    --headerColor: #FFFFFF; /*white*/
+    --whiteText: #FFFFFF; /*white*/
     --greyText: #9B9B9B;
     --blueText: #0073E5; 
     
@@ -13,32 +13,31 @@
 
 html {
     margin: auto;
-    height: 100%;
+    height: auto;
 
     background-color: var(--bgColor);
-    display: flex;
-    flex-direction: column;
 
     font-family: var(--font);
     color: var(--greyText);
     scroll-behavior: smooth;
-    box-sizing: border-box;
     position: center;
+    text-align: center;
+    box-sizing: content-box;
 }
 
 body {
     margin: auto;
-    padding: 0;
+    padding: auto;
     height: fit-content;
-    min-height: 100%;
-    width: 100%;
     display: block;
     position: center;
-    box-sizing: border-box;
+    max-width: 500px;
+    box-sizing: content-box;
+    width: 100%;
 }
 
 .header {
-    color: var(--headerColor);
+    color: var(--whiteText);
     font-weight: 600;
     font-size: 36px;
     text-align: center;
@@ -55,6 +54,7 @@ body {
     background-color: transparent;
     box-sizing: border-box;
     text-align: center;
+    overflow: hidden;
 }
 
 .description {
@@ -123,4 +123,42 @@ li ,ul {
 
 .alisa:active {
     background-color: transparent;
+}
+
+.topic {
+  float: center;
+  background-color: transparent;
+  width: auto;
+  display: none;
+  border-radius: 12px;
+}
+
+.show {
+  display: block;
+}
+
+.btn {
+  display: inline-block;
+  width: auto;
+  position: center;
+  margin: 10px auto;
+  padding: 12px 16px;
+  border: none;
+  outline: none;
+  background-color: #333740;
+  cursor: pointer;
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #b1b8ca;
+}
+
+.btn:hover {
+  background-color: var(--blueText);
+  color: #ffffff;
+}
+
+.btn.active {
+  background-color: var(--blueText);
+  color: #ffffff;
 }
