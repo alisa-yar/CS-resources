@@ -6,16 +6,41 @@
   <title>CS Sources</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="math.png" type="image/x-icon"/>
+
 </head>
-  
+
+<!--********** BODY **********-->
 <body>
 <div class="header">
    Computer Science Sources
 </div>
 
-<div class="info">  
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')">Show all</button>
+  <button class="btn" onclick="filterSelection('infi')">Infi Calculus 1</button>
+  <button class="btn" onclick="filterSelection('algebra')">Linear Algebra 1</button>
+  <button class="btn" onclick="filterSelection('java')">Intro to Java</button>
+  <button class="btn" onclick="filterSelection('general')">General</button>
+  <button class="btn" onclick="filterSelection('definitions')">Definitions</button>
+  <button class="btn" onclick="filterSelection('drive')">Drive</button>
+</div>  
   
-<div class="topic"> <div class="description">Definitions</div>
+<div class="info"> 
+  
+<div class="topic general"> <div class="description">General</div>
+<div class="links">  
+ <ul>
+  <li><a class="link" href="https://math-wiki.com/index.php/" target="_blank">Math Wiki</a></li>
+  <li><a class="link" href="https://www.allmath.com/limit-calculator.php/" target="_blank">Limit Calculator</a></li>
+  <li><a class="link" href="http://gadial.net/" target="_blank">Blog about math and computer science</a></li>
+  <li><a class="link" href="https://www.dev101.net/" target="_blank">Dev101: Blog for cs students and developers</a></li>
+  <li><a class="link" href="https://missing.csail.mit.edu/?fbclid=IwAR1B27bpJDk82yHYSIC-ulfEfPT5nLzIlu1GM4KKOvripvj4N0xMzeqk6bg/" target="_blank">The Missing Semester</a></li>
+  <!-- <li><a class="link" href="https://kvozut.co.il/">Summaries</a></li> -->
+ </ul> 
+</div> <!--links-->  
+</div> <!--topic-->
+
+<div class="topic definitions"> <div class="description">Definitions</div>
 <div class="links">  
  <ul>
   <li><a class="link" href="https://gadial.net/2010/09/07/real_numbers_overview/" target="_blank">Real Numbers (R)</a></li>
@@ -27,10 +52,10 @@
   <li><a class="link" href="https://gadial.net/2010/10/03/limit_of_sequence/" target="_blank">Limit of Sequence</a></li>
   <li><a class="link" href="https://gadial.net/2010/10/26/limit_of_functions_and_continuity/" target="_blank">Limit of Fnctions and Continuity</a></li>
  </ul> 
-</div>
-</div>
+</div> <!--links-->  
+</div> <!--topic-->
 
-<div class="topic"> <div class="description">Infi 1</div>
+<div class="topic infi"> <div class="description">Infi Calculus 1</div>
 <div class="links">  
 <ul>    
   <li><a class="link" href="https://infi101.com/" target="_blank">Infi 101 (Blog)</a></li>
@@ -38,55 +63,91 @@
   <li><a class="link" href="https://math-wiki.com/index.php?title=סיכומי_הרצאות_מאת_נועם_יערי_ויהונתן_רגב&mobileaction=toggle_view_desktop/" target="_blank">Infi 1 (Math-Wiki)</a></li>
   <li><a class="link" href="http://infi1prove.s3-website.eu-central-1.amazonaws.com/?fbclid=IwAR3RsIQPVidnw3xAAAC3K0HeHId2m-u5LX8Y4p6khDgoW5UtBCjMAq666wM/" target="_blank">Infi 1 Theorems</a></li>
  </ul> 
-</div>
-</div>
-  
-<div class="topic"> <div class="description">Linear Algebra 1</div>
+</div> <!--links-->  
+</div> <!--topic-->
+
+<div class="topic algebra"> <div class="description">Linear Algebra 1</div>
 <div class="links">  
  <ul>    
   <li><a class="link" href="https://gadial.net/categories/linear%20algebra/" target="_blank">Linear Algebra (search results)</a></li>
   <li><a class="link" href="https://math-wiki.com/index.php?title=אלגברה_לינארית_1_-_מערך_תרגול/" target="_blank">Linear Algebra (Math-Wiki)</a></li>
  </ul> 
-</div>
-</div>
+</div> <!--links-->  
+</div> <!--topic-->
 
-<div class="topic"> <div class="description">Intro to Java</div>
+<div class="topic java"> <div class="description">Intro to Java</div>
 <div class="links">  
  <ul>    
   <li><a class="link" href="https://github.com/Koren-Ben-Ezra/Exams/" target="_blank">Exams</a></li>
  <li><a class="link" href="https://drive.google.com/drive/mobile/folders/1Cahj8Ks4A0elL3_9hTYeAQImQPYSZV_D?usp=sharing/" target="_blank">Intro to Java Drive</a></li>
  </ul> 
-</div>
-</div>  
-  
-<div class="topic"> <div class="description">General</div>
-<div class="links">  
- <ul>
-  <li><a class="link" href="https://math-wiki.com/index.php/" target="_blank">Math Wiki</a></li>
-  <li><a class="link" href="https://www.allmath.com/limit-calculator.php/" target="_blank">Limit Calculator</a></li>
-  <li><a class="link" href="http://gadial.net/" target="_blank">Blog about math and computer science</a></li>
-  <li><a class="link" href="https://www.dev101.net/" target="_blank">Dev101: Blog for cs students and developers</a></li>
-  <li><a class="link" href="https://missing.csail.mit.edu/?fbclid=IwAR1B27bpJDk82yHYSIC-ulfEfPT5nLzIlu1GM4KKOvripvj4N0xMzeqk6bg/" target="_blank">The Missing Semester</a></li>
-  <!-- <li><a class="link" href="https://kvozut.co.il/">Summaries</a></li> -->
- </ul> 
-</div>    
-</div>
-  
-<div class="topic"> <div class="description">Drive</div>
+</div> <!--links-->  
+</div> <!--topic-->
+
+<div class="topic drive"> <div class="description">Drive</div>
 <div class="links">  
  <ul>    
   <li><a class="link" href="https://cs20.co.il" target="_blank">CS20 Drive</a></li>
   <li><a class="link" href="https://mega.nz/folder/0Sg0iD4B#0OPF1JJgFjtYoJuStlsCtA/" target="_blank">Mega</a></li>
   <li><a class="link" href="https://mega.nz/folder/pdVQlYBC#DQInYv6FTlxGBS0B9aTsEQ/" target="_blank">Secret Mega</a></li>
   <li><a class="link" href="https://drive.google.com/drive/folders/10GQnONdlGPYK44ZYrxmCMAOt9VQ9488r?usp=sharing&fbclid=IwAR31OaLIMs-BL_GoQmr5lZloVWhmE-SBi03uZEhog1hZ3k4IEFqU0hzJKU8/" target="_blank">Google Drive</a></li>
-  <!-- <li><a class="link" href="https://mega.nz/folder/0Sg0iD4B#0OPF1JJgFjtYoJuStlsCtA/" target="_blank"></a></li>
-  <li><a class="link" href="https://mega.nz/folder/0Sg0iD4B#0OPF1JJgFjtYoJuStlsCtA/" target="_blank"></a></li> -->
+  <!--
+  <li><a class="link" href="https://mega.nz/folder/0Sg0iD4B#0OPF1JJgFjtYoJuStlsCtA/" target="_blank"></a></li>
+  <li><a class="link" href="https://mega.nz/folder/0Sg0iD4B#0OPF1JJgFjtYoJuStlsCtA/" target="_blank"></a></li> 
+  -->
  </ul> 
-</div>
-</div>
+</div> <!--links-->  
+</div> <!--topic-->
   
 </div> <!--info-->
-  
+
+<!--********** SCRIPT **********-->
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("topic");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+<!--********** FOOTER **********-->
 <div class="footer">
    Build by <a class="alisa" href="https://linktree.alisa.social/" target="_blank">alisa.algo</a> | 2023 | 
   <a class="alisa" href="https://github.com/alisa-yar/math" target="_blank">source code</a>
